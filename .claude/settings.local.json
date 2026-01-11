@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "Stop": [
+      "./scripts/stage-conversations.sh"
+    ],
+    "PreCompact": [
+      "./scripts/auto-checkpoint.sh"
+    ]
+  }
+}
