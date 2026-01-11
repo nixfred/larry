@@ -14,9 +14,9 @@ This page explains **how Larry works** from a technical perspective. If you're a
 
 Larry is built on three foundational systems:
 
-1. **<a href="https://claude.ai/code" target="_blank">Claude Code</a> 2.1.2** - The substrate (<a href="https://anthropic.com" target="_blank">Anthropic's</a> CLI for Claude)
-2. **<a href="https://github.com/danielmiessler/Personal_AI_Infrastructure" target="_blank">PAI (Personal AI Infrastructure)</a>** - The brain (skills, hooks, memory)
-3. **<a href="https://github.com/nixfred/pi_forever" target="_blank">pi_forever</a>** - The memory (git-based total recall)
+1. **<a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer">Claude Code</a> 2.1.2** - The substrate (<a href="https://anthropic.com" target="_blank" rel="noopener noreferrer">Anthropic's</a> CLI for Claude)
+2. **<a href="https://github.com/danielmiessler/Personal_AI_Infrastructure" target="_blank" rel="noopener noreferrer">PAI (Personal AI Infrastructure)</a>** - The brain (skills, hooks, memory)
+3. **<a href="https://github.com/nixfred/pi_forever" target="_blank" rel="noopener noreferrer">pi_forever</a>** - The memory (git-based total recall)
 
 ```
 ┌─────────────────────────────────────────────────┐
