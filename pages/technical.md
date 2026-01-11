@@ -10,6 +10,7 @@ This page explains **how Larry works** from a technical perspective. If you're a
 
 ---
 
+<a id="architecture-overview"></a>
 ## Architecture Overview
 
 Larry is built on three foundational systems:
@@ -59,8 +60,10 @@ Larry is built on three foundational systems:
 </div>
 
 
+<a id="memory-persistence"></a>
 ## How Memory Persistence Works
 
+<a id="sessionstart-hook"></a>
 ### SessionStart Hook
 
 Located at: `~/.claude/hooks/SessionStart/load-core-context.ts`
@@ -87,6 +90,7 @@ ${larryMemory}
 </system-reminder>`
 ```
 
+<a id="stop-hook"></a>
 ### Stop Hook
 
 Located at: `~/.claude/hooks/Stop/`
@@ -98,6 +102,7 @@ When a conversation ends, this hook:
 
 This captures **every conversation** for later recall.
 
+<a id="precompact-hook"></a>
 ### PreCompact Hook
 
 Located at: `~/.claude/hooks/PreCompact/`
@@ -140,6 +145,7 @@ cat ~/.claude/projects/<uuid>.jsonl | jq .
 
 ---
 
+<a id="pai-skills-system"></a>
 ## PAI Skills System
 
 Larry has 13 PAI skills installed:
@@ -167,6 +173,7 @@ Claude Code parses this and suggests skills proactively.
 
 ---
 
+<a id="claude-router-integration"></a>
 ## claude-router Integration
 
 On January 11, 2026, Larry integrated **claude-router** for efficient model routing:
@@ -226,6 +233,7 @@ On January 11, 2026, Larry was broken. Hook format errors prevented Claude Code 
 
 ---
 
+<a id="discord-integration"></a>
 ## Discord Integration
 
 <div class="graphic-container">
@@ -276,6 +284,7 @@ git log --oneline
 
 ---
 
+<a id="stats-metrics"></a>
 ## Stats & Metrics
 
 **Larry's Evolution:**

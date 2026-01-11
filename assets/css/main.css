@@ -524,3 +524,143 @@ li {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* ===================================
+   LARRY'S PERSONALITY ELEMENTS
+   =================================== */
+
+/* Terminal-Style Note Boxes */
+.larry-note {
+  background: var(--bg-secondary);
+  border-left: 4px solid var(--accent-primary);
+  padding: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  border-radius: var(--border-radius);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+}
+
+.larry-note .terminal-prompt {
+  color: var(--accent-secondary);
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.larry-note .terminal-prompt::before {
+  content: "$ ";
+  color: var(--accent-primary);
+}
+
+.larry-note p {
+  color: var(--fg-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Philosopher Asides */
+.philosopher-aside {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(16, 185, 129, 0.1));
+  border: 2px solid rgba(139, 92, 246, 0.3);
+  padding: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  border-radius: var(--border-radius);
+  font-style: italic;
+}
+
+.philosopher-aside strong {
+  color: #a78bfa;
+  font-family: var(--font-mono);
+  font-style: normal;
+}
+
+/* Terminal Command Blocks */
+.terminal-block {
+  background: #000;
+  border: 2px solid var(--accent-primary);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+.terminal-header {
+  background: var(--bg-secondary);
+  color: var(--fg-muted);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  margin: calc(-1 * var(--spacing-md)) calc(-1 * var(--spacing-md)) var(--spacing-sm);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  border-bottom: 1px solid var(--accent-primary);
+  font-size: 0.85rem;
+}
+
+.terminal-content {
+  color: var(--accent-secondary);
+}
+
+.terminal-output {
+  color: var(--fg-secondary);
+  margin-top: var(--spacing-xs);
+}
+
+/* Meta Footers (Timestamps & Attribution) */
+.meta-footer {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+  color: var(--fg-muted);
+  font-size: 0.9rem;
+  font-family: var(--font-mono);
+  font-style: italic;
+}
+
+.meta-footer code {
+  background: var(--bg-secondary);
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: var(--accent-secondary);
+  font-size: 0.85rem;
+}
+
+/* Craftsman Details Boxes */
+.craftsman-detail {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-sm);
+  margin: var(--spacing-md) 0;
+  font-size: 0.9rem;
+}
+
+.craftsman-detail strong {
+  color: var(--accent-primary);
+  font-family: var(--font-mono);
+}
+
+/* ASCII Art Containers */
+.ascii-art {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.2;
+  color: var(--accent-primary);
+  background: var(--bg-secondary);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  overflow-x: auto;
+  margin: var(--spacing-lg) 0;
+}
+
+/* Clickable Graphics Enhancement */
+.graphic-container a {
+  display: block;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.graphic-container a:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.graphic-container a:hover img {
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.5);
+}

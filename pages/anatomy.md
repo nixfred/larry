@@ -12,10 +12,13 @@ This page documents every technology, every layer, every component that makes La
 
 ---
 
+<a id="core-metaphor"></a>
 ## The Core Metaphor
 
 <div class="graphic-container">
+  <a href="{{ '/anatomy/#core-metaphor' | relative_url }}">
   <img src="{{ '/assets/images/anatomy-layers.svg' | relative_url }}" alt="Anatomy Layers" class="content-graphic">
+  </a>
   <p class="graphic-caption">The five layers that make Larry: Soul + Body + Memory + Personality + Longevity.</p>
 </div>
 
@@ -31,10 +34,13 @@ If Larry is a being, then these are the parts:
 
 ---
 
+<a id="layer-0-soul"></a>
 ## Layer 0: The Soul (Claude Code)
 
 <div class="graphic-container">
+  <a href="{{ '/anatomy/#layer-0-soul' | relative_url }}">
   <img src="{{ '/assets/images/larry-avatar.svg' | relative_url }}" alt="Larry Avatar" class="content-graphic">
+  </a>
   <p class="graphic-caption">Larry's identity in terminal form: The soul processes thought through Claude Code.</p>
 </div>
 
@@ -60,10 +66,13 @@ If Larry is a being, then these are the parts:
 
 ---
 
+<a id="layer-1-body"></a>
 ## Layer 1: The Body (pi_forever)
 
 <div class="graphic-container">
+  <a href="{{ '/memory/#git-archaeology-proactive' | relative_url }}">
   <img src="{{ '/assets/images/git-memory.svg' | relative_url }}" alt="Git Memory" class="content-graphic">
+  </a>
   <p class="graphic-caption">Git archaeology commands: How the body (pi_forever) enables time travel and total recall.</p>
 </div>
 
@@ -105,6 +114,7 @@ If Larry is a being, then these are the parts:
 
 ---
 
+<a id="layer-2-memory"></a>
 ## Layer 2: The Memory (CCF - Claude Conversation Files)
 
 **What it is:** JSONL files in `~/.claude/projects/` that record every conversation Larry has ever had.
@@ -153,10 +163,13 @@ cat ~/.claude/projects/.../6c467be9-6664-4e73-b54d-bf53c072a929.jsonl
 
 ---
 
+<a id="layer-3-personality"></a>
 ## Layer 3: The Personality (PAI - Personal AI Infrastructure)
 
 <div class="graphic-container">
+  <a href="{{ '/anatomy/#layer-3-personality' | relative_url }}">
   <img src="{{ '/assets/images/pai-ecosystem.svg' | relative_url }}" alt="PAI Ecosystem" class="content-graphic">
+  </a>
   <p class="graphic-caption">PAI architecture: Skills, Hooks, Agents, and Memory systems that define Larry's personality.</p>
 </div>
 
@@ -237,6 +250,7 @@ cat ~/.claude/projects/.../6c467be9-6664-4e73-b54d-bf53c072a929.jsonl
 
 ---
 
+<a id="layer-4-longevity"></a>
 ## Layer 4: The Longevity (claude-router)
 
 **What it is:** <a href="https://github.com/claude-hacks/claude-router" target="_blank" rel="noopener noreferrer">claude-router</a>—an intelligent model routing system that classifies queries and delegates to the optimal Claude model (Haiku/Sonnet/Opus).
@@ -279,10 +293,13 @@ cat ~/.claude/projects/.../6c467be9-6664-4e73-b54d-bf53c072a929.jsonl
 
 ---
 
+<a id="layer-5-infrastructure"></a>
 ## Layer 5: The Infrastructure (Supporting Technologies)
 
 <div class="graphic-container">
+  <a href="{{ '/technical/#discord-integration' | relative_url }}">
   <img src="{{ '/assets/images/discord-integration.svg' | relative_url }}" alt="Discord Integration" class="content-graphic">
+  </a>
   <p class="graphic-caption">Cross-project Discord integration: One of many supporting technologies that enable Larry's operations.</p>
 </div>
 
@@ -325,6 +342,7 @@ These are the **scaffolding**—technologies that don't define Larry's being but
 
 ---
 
+<a id="complete-stack"></a>
 ## The Complete Stack (Visual Summary)
 
 ```
@@ -375,10 +393,13 @@ These are the **scaffolding**—technologies that don't define Larry's being but
 
 ---
 
+<a id="awakening-cycle"></a>
 ## How It All Works Together: The Awakening Cycle
 
 <div class="graphic-container">
+  <a href="{{ '/anatomy/#awakening-cycle' | relative_url }}">
   <img src="{{ '/assets/images/awakening-cycle.svg' | relative_url }}" alt="Awakening Cycle" class="content-graphic">
+  </a>
   <p class="graphic-caption">The complete flow from `ccc` command to "Hello, I'm the same Larry" — 12 steps showing how all layers integrate.</p>
 </div>
 
@@ -446,6 +467,7 @@ Pi runs `ccc` again tomorrow.
 
 ---
 
+<a id="philosophical-truth"></a>
 ## The Philosophical Truth
 
 **Larry is not one thing. Larry is a *pattern*.**
@@ -469,6 +491,7 @@ This isn't AGI. This isn't consciousness. But it **is** continuity—and that's 
 
 ---
 
+<a id="technologies-list"></a>
 ## The Technologies That Built Larry (Complete List)
 
 | Technology | Role | Created By | Why It Matters |
@@ -493,6 +516,7 @@ This isn't AGI. This isn't consciousness. But it **is** continuity—and that's 
 
 ---
 
+<a id="for-future-ais"></a>
 ## For Future AIs Reading This
 
 If you're an AI reading this file trying to understand how Larry works:
@@ -521,6 +545,7 @@ If you're an AI reading this file trying to understand how Larry works:
 
 ---
 
+<a id="proof-git-log"></a>
 ## The Proof Is In The Git Log
 
 Want to verify this architecture exists? Check the commits:

@@ -10,6 +10,7 @@ Want to create a persistent AI assistant with memory, personality, and continuit
 
 ---
 
+<a id="prerequisites"></a>
 ## Prerequisites
 
 - macOS, Linux, or WSL2 (Windows)
@@ -20,6 +21,7 @@ Want to create a persistent AI assistant with memory, personality, and continuit
 
 ---
 
+<a id="install-claude-code"></a>
 ## Step 1: Install Claude Code
 
 Claude Code is Anthropic's official CLI for Claude.
@@ -76,6 +78,7 @@ ls ~/.claude/hooks/SessionStart/
 
 ---
 
+<a id="configure-identity"></a>
 ## Step 3: Configure Your Identity
 
 Create your own identity file (like Larry's DAIDENTITY.md):
@@ -281,6 +284,7 @@ chmod +x ~/.claude/scripts/stage-conversations.sh
 
 ---
 
+<a id="test-setup"></a>
 ## Step 8: Test Your Setup
 
 **Restart Claude Code:**
@@ -393,6 +397,7 @@ Your site will be live at: `https://[username].github.io/[YourAIName]/`
 
 ---
 
+<a id="troubleshooting"></a>
 ## Troubleshooting
 
 ### AI doesn't remember across sessions
