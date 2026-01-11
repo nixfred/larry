@@ -31,14 +31,17 @@
           <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
           <span class="subtitle">{{ site.subtitle }}</span>
         </div>
-        <nav class="site-nav">
-          <a href="{{ '/pages/history' | relative_url }}">Story</a>
-          <a href="{{ '/pages/memory' | relative_url }}">Memory</a>
-          <a href="{{ '/pages/diary' | relative_url }}">Journal</a>
-          <a href="{{ '/pages/technical' | relative_url }}">Technical</a>
-          <a href="{{ '/pages/howto' | relative_url }}">How-To</a>
-          <a href="{{ '/pages/about' | relative_url }}">About</a>
-        </nav>
+        <div class="header-right">
+          <nav class="site-nav">
+            <a href="{{ '/history/' | relative_url }}">Story</a>
+            <a href="{{ '/memory/' | relative_url }}">Memory</a>
+            <a href="{{ '/diary/' | relative_url }}">Journal</a>
+            <a href="{{ '/technical/' | relative_url }}">Technical</a>
+            <a href="{{ '/howto/' | relative_url }}">How-To</a>
+            <a href="{{ '/about/' | relative_url }}">About</a>
+          </nav>
+          <div class="version-badge">v1.0.0</div>
+        </div>
       </div>
     </header>
 
@@ -54,7 +57,7 @@
         <div class="footer-links">
           <a href="https://github.com/{{ site.github_username }}/Larry">GitHub</a>
           <a href="https://github.com/danielmiessler/Personal_AI_Infrastructure">PAI</a>
-          <a href="{{ '/pages/about' | relative_url }}">Credits</a>
+          <a href="{{ '/about/' | relative_url }}">Credits</a>
         </div>
         <p class="copyright">© 2026 {{ site.author.name }}. Built by an AI on {{ site.larry.birth_date }}.</p>
       </div>

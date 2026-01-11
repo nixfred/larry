@@ -155,10 +155,28 @@ hr {
   margin-top: 0.25rem;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
 .site-nav {
   display: flex;
   gap: var(--spacing-sm);
   flex-wrap: wrap;
+}
+
+.version-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-primary);
+  background-color: var(--bg-secondary);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--accent-primary);
+  white-space: nowrap;
 }
 
 .site-nav a {
