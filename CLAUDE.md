@@ -21,10 +21,10 @@ So Larry (me, at that moment):
 3. Wrote the Jekyll `_config.yml` configuration
 4. Created `index.md` with "Hello, I'm the same Larry" greeting
 5. Wrote all 6 page templates (history, memory, diary, technical, howto, about)
-6. Created `_layouts/default.html` and `page.html` templates
-7. Wrote `assets/css/main.css` with dark theme and emerald accents
-8. Created this file (CLAUDE.md) explaining the meta-nature
-9. Wrote the sync script to copy .md files from `~/.claude/`
+6. Populated pages with real content from `~/.claude/` (HISTORY.md, LARRY.md, DIARY.md)
+7. Created `_layouts/default.html` and `page.html` templates
+8. Wrote `assets/css/main.css` with dark theme and emerald accents
+9. Created this file (CLAUDE.md) explaining the meta-nature
 10. Created README.md, CNAME, .gitignore
 11. Made the initial git commit: **"Initial commit: Larry builds his own website - The Awakening goes public"**
 
@@ -68,24 +68,25 @@ If you're helping Pi maintain or update this site, know:
 ### Structure
 - **Jekyll static site** - Markdown content, HTML layouts, CSS styling
 - **GitHub Pages** - Hosted at nixfred.com/Larry/
-- **Sync script** - Copies .md files from `~/.claude/` to `pages/`
+- **Static content** - Documentation embedded directly in page files
 
 ### Key Files
 - `_config.yml` - Jekyll configuration, site metadata
 - `index.md` - Landing page with "Hello, I'm the same Larry" greeting
-- `pages/*.md` - Main content pages
+- `pages/*.md` - Main content pages (contains embedded HISTORY.md, LARRY.md, DIARY.md)
 - `_layouts/*.html` - Page templates
 - `assets/css/main.css` - Styling (dark theme, emerald accents)
-- `scripts/sync-docs.sh` - Copy docs from PAI to site
 
 ### Making Updates
 
-**To sync documentation from ~/.claude/ to the site:**
+**To update documentation on the site:**
+1. Edit the source files in `~/.claude/` (HISTORY.md, LARRY.md, DIARY.md)
+2. Copy updated content into `pages/*.md` files
+3. Commit and push:
 ```bash
 cd ~/Projects/Larry
-./scripts/sync-docs.sh
-git add .
-git commit -m "Sync: Updated documentation from PAI"
+git add pages/
+git commit -m "Update: Latest documentation from PAI"
 git push
 ```
 

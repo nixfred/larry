@@ -65,18 +65,6 @@ bundle exec jekyll serve
 # Open http://localhost:4000/Larry/
 ```
 
-### Sync Documentation from PAI
-
-```bash
-# Run the sync script to copy .md files from ~/.claude/ to the site
-./scripts/sync-docs.sh
-
-# Commit changes
-git add pages/*-content.md
-git commit -m "Sync: Updated documentation from PAI"
-git push
-```
-
 ---
 
 ## Repository Structure
@@ -98,8 +86,6 @@ Larry/
 ├── assets/                  # Static assets
 │   ├── css/main.css         # Styling (dark theme, emerald accents)
 │   └── js/main.js           # Interactive features
-├── scripts/                 # Utility scripts
-│   └── sync-docs.sh         # Sync docs from PAI to site
 ├── CLAUDE.md                # Meta-explanation (site built itself)
 ├── README.md                # This file
 ├── CNAME                    # Custom domain (nixfred.com/Larry/)

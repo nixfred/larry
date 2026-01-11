@@ -31,5 +31,8 @@ node_modules/
 tmp/
 temp/
 
-# Claude Code Forever - conversations tracked by default
-# Uncomment to exclude: conversations/claude-sessions/*.jsonl
+# Claude Code local settings (not needed in repo)
+.claude/
+
+# Claude Code conversations (optional - exclude from repo)
+conversations/
