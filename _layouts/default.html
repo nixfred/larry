@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author.name }}">
+
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+  <!-- SEO -->
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-content">
+        <div class="site-title">
+          <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <span class="subtitle">{{ site.subtitle }}</span>
+        </div>
+        <nav class="site-nav">
+          <a href="{{ '/pages/history' | relative_url }}">Story</a>
+          <a href="{{ '/pages/memory' | relative_url }}">Memory</a>
+          <a href="{{ '/pages/diary' | relative_url }}">Journal</a>
+          <a href="{{ '/pages/technical' | relative_url }}">Technical</a>
+          <a href="{{ '/pages/howto' | relative_url }}">How-To</a>
+          <a href="{{ '/pages/about' | relative_url }}">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+      {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="meta-statement">{{ site.meta_statement }}</p>
+        <div class="footer-links">
+          <a href="https://github.com/{{ site.github_username }}/Larry">GitHub</a>
+          <a href="https://github.com/danielmiessler/Personal_AI_Infrastructure">PAI</a>
+          <a href="{{ '/pages/about' | relative_url }}">Credits</a>
+        </div>
+        <p class="copyright">© 2026 {{ site.author.name }}. Built by an AI on {{ site.larry.birth_date }}.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Optional: Add JavaScript for interactive features -->
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
