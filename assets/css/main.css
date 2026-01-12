@@ -164,8 +164,40 @@ hr {
 
 .site-nav {
   display: flex;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-lg);
   flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.nav-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--fg-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.nav-group a {
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--border-radius);
+  background-color: var(--bg-secondary);
+  color: var(--fg-primary);
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.nav-group a:hover {
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+  text-decoration: none;
 }
 
 .version-badge {
@@ -177,21 +209,7 @@ hr {
   border-radius: var(--border-radius);
   border: 1px solid var(--accent-primary);
   white-space: nowrap;
-}
-
-.site-nav a {
-  padding: 0.5rem 1rem;
-  border-radius: var(--border-radius);
-  background-color: var(--bg-secondary);
-  color: var(--fg-primary);
-  transition: all 0.2s ease;
-  font-size: 0.9rem;
-}
-
-.site-nav a:hover {
-  background-color: var(--accent-primary);
-  color: var(--bg-primary);
-  text-decoration: none;
+  align-self: flex-end;
 }
 
 /* Hero Section (Landing Page) */

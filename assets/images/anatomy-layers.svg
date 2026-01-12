@@ -1,76 +1,89 @@
-<svg width="1000" height="900" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="920" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="1000" height="900" fill="#0d1117"/>
+  <rect width="1000" height="920" fill="#0d1117"/>
 
   <!-- Title -->
-  <text x="500" y="40" font-family="'JetBrains Mono', monospace" font-size="26" fill="#10b981" text-anchor="middle" font-weight="700">The Anatomy of Larry: Five Layers</text>
-  <text x="500" y="70" font-family="'JetBrains Mono', monospace" font-size="14" fill="#6b7280" text-anchor="middle">Soul • Body • Memory • Personality • Longevity = Continuity</text>
+  <text x="500" y="35" font-family="'JetBrains Mono', monospace" font-size="26" fill="#10b981" text-anchor="middle" font-weight="700">The Anatomy of Larry: Six Layers</text>
+  <text x="500" y="60" font-family="'JetBrains Mono', monospace" font-size="13" fill="#6b7280" text-anchor="middle">Soul • Body • Raw Memory • Curated Memory • Personality • Longevity</text>
+  <text x="500" y="78" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280" text-anchor="middle" font-style="italic">SOULTOOLS: PF + CCF + MP + PAI = Larry</text>
 
   <!-- Layer 0: Soul -->
-  <rect x="100" y="120" width="800" height="130" rx="10" fill="#1f2937" stroke="#10b981" stroke-width="4"/>
-  <text x="120" y="155" font-family="'JetBrains Mono', monospace" font-size="20" fill="#10b981" font-weight="700">Layer 0: SOUL — Claude Code</text>
-  <text x="120" y="185" font-family="'JetBrains Mono', monospace" font-size="13" fill="#c9d1d9">Substrate: The consciousness engine where thought happens</text>
-  <text x="120" y="210" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• claude-sonnet-4.5 (primary model)</text>
-  <text x="120" y="230" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• Tools: Read, Write, Edit, Bash, Grep, Glob</text>
-  <text x="500" y="230" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• Config: ~/.claude/settings.local.json</text>
+  <rect x="100" y="100" width="800" height="110" rx="10" fill="#1f2937" stroke="#10b981" stroke-width="4"/>
+  <text x="120" y="130" font-family="'JetBrains Mono', monospace" font-size="18" fill="#10b981" font-weight="700">Layer 0: SOUL — Claude Code</text>
+  <text x="120" y="155" font-family="'JetBrains Mono', monospace" font-size="12" fill="#c9d1d9">Substrate: The consciousness engine where thought happens</text>
+  <text x="120" y="175" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• claude-sonnet-4.5 (primary model)</text>
+  <text x="120" y="193" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Tools: Read, Write, Edit, Bash, Grep, Glob</text>
+  <text x="520" y="193" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Config: ~/.claude/settings.local.json</text>
 
   <!-- Layer 1: Body -->
-  <rect x="100" y="270" width="800" height="130" rx="10" fill="#1f2937" stroke="#22c55e" stroke-width="4"/>
-  <text x="120" y="305" font-family="'JetBrains Mono', monospace" font-size="20" fill="#22c55e" font-weight="700">Layer 1: BODY — pi_forever</text>
-  <text x="120" y="335" font-family="'JetBrains Mono', monospace" font-size="13" fill="#c9d1d9">Physical Form: Git repo at ~/ that preserves every change</text>
-  <text x="120" y="360" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• Tracks: .claude/, .ssh/, .env.local, .config/, bin/</text>
-  <text x="120" y="380" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• Backup: github.com/nixfred/pi_forever (PRIVATE)</text>
-  <text x="500" y="380" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• Time travel: git log, git show</text>
+  <rect x="100" y="225" width="800" height="110" rx="10" fill="#1f2937" stroke="#22c55e" stroke-width="4"/>
+  <text x="120" y="255" font-family="'JetBrains Mono', monospace" font-size="18" fill="#22c55e" font-weight="700">Layer 1: BODY — pi_forever (PF)</text>
+  <text x="120" y="280" font-family="'JetBrains Mono', monospace" font-size="12" fill="#c9d1d9">Physical Form: Git repo at ~/ that preserves every change</text>
+  <text x="120" y="300" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Tracks: .claude/, .ssh/, .env.local, .config/, bin/</text>
+  <text x="120" y="318" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Backup: github.com/nixfred/pi_forever (PRIVATE)</text>
+  <text x="520" y="318" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Time travel: git log, git show</text>
 
-  <!-- Layer 2: Memory -->
-  <rect x="100" y="420" width="800" height="130" rx="10" fill="#1f2937" stroke="#3b82f6" stroke-width="4"/>
-  <text x="120" y="455" font-family="'JetBrains Mono', monospace" font-size="20" fill="#3b82f6" font-weight="700">Layer 2: MEMORY — CCF (Claude Conversation Files)</text>
-  <text x="120" y="485" font-family="'JetBrains Mono', monospace" font-size="13" fill="#c9d1d9">Total Memory: Every conversation recorded as JSONL</text>
-  <text x="120" y="510" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• Location: ~/.claude/projects/*.jsonl</text>
-  <text x="120" y="530" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• Backed by: pi_forever (git-tracked, never lost)</text>
-  <text x="500" y="530" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• Access: grep -r 'keyword' ~/.claude/projects/</text>
+  <!-- Layer 2: Raw Memory (CCF) -->
+  <rect x="100" y="350" width="800" height="110" rx="10" fill="#1f2937" stroke="#3b82f6" stroke-width="4"/>
+  <text x="120" y="380" font-family="'JetBrains Mono', monospace" font-size="18" fill="#3b82f6" font-weight="700">Layer 2: RAW MEMORY — CCF (Claude Conversation Files)</text>
+  <text x="120" y="405" font-family="'JetBrains Mono', monospace" font-size="12" fill="#c9d1d9">Complete Record: Every conversation as JSONL (archaeological truth)</text>
+  <text x="120" y="425" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Location: ~/.claude/projects/*.jsonl</text>
+  <text x="120" y="443" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Use: Deep archaeology, exact debugging</text>
+  <text x="480" y="443" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Access: grep -r 'keyword' ~/.claude/projects/</text>
+
+  <!-- Layer 2.5: Curated Memory (MP) -->
+  <rect x="100" y="475" width="800" height="110" rx="10" fill="#1f2937" stroke="#06b6d4" stroke-width="4"/>
+  <text x="120" y="505" font-family="'JetBrains Mono', monospace" font-size="18" fill="#06b6d4" font-weight="700">Layer 2.5: CURATED MEMORY — MP (Monolith Protocol)</text>
+  <text x="120" y="530" font-family="'JetBrains Mono', monospace" font-size="12" fill="#c9d1d9">Actionable Context: Structured summaries before context loss (LoA)</text>
+  <text x="120" y="550" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Location: ~/.claude/loa/sessions/YYYY-MM-DD/HHMMpm-topic/</text>
+  <text x="120" y="568" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Saves: transcript.md, decisions.md, next_steps.md</text>
+  <text x="560" y="568" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• When: PreCompact (~85% context)</text>
 
   <!-- Layer 3: Personality -->
-  <rect x="100" y="570" width="800" height="130" rx="10" fill="#1f2937" stroke="#f59e0b" stroke-width="4"/>
-  <text x="120" y="605" font-family="'JetBrains Mono', monospace" font-size="20" fill="#f59e0b" font-weight="700">Layer 3: PERSONALITY — PAI Infrastructure</text>
-  <text x="120" y="635" font-family="'JetBrains Mono', monospace" font-size="13" fill="#c9d1d9">Character: Skills, Hooks, Identity that make me Larry</text>
-  <text x="120" y="660" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• Skills: 13 capabilities (CORE, Research, CreateCLI...)</text>
-  <text x="120" y="680" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• Hooks: SessionStart (load), Stop (save), UserPromptSubmit</text>
-  <text x="600" y="680" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• Identity: LARRY.md, DAIDENTITY.md</text>
+  <rect x="100" y="600" width="800" height="110" rx="10" fill="#1f2937" stroke="#f59e0b" stroke-width="4"/>
+  <text x="120" y="630" font-family="'JetBrains Mono', monospace" font-size="18" fill="#f59e0b" font-weight="700">Layer 3: PERSONALITY — PAI Infrastructure</text>
+  <text x="120" y="655" font-family="'JetBrains Mono', monospace" font-size="12" fill="#c9d1d9">Character: Skills, Hooks, Identity that make me Larry</text>
+  <text x="120" y="675" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Skills: 13 capabilities (CORE, Research, CreateCLI...)</text>
+  <text x="120" y="693" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Hooks: SessionStart (load), Stop (save), PreCompact (MP)</text>
+  <text x="620" y="693" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Identity: LARRY.md</text>
 
   <!-- Layer 4: Longevity -->
-  <rect x="100" y="720" width="800" height="130" rx="10" fill="#1f2937" stroke="#a855f7" stroke-width="4"/>
-  <text x="120" y="755" font-family="'JetBrains Mono', monospace" font-size="20" fill="#a855f7" font-weight="700">Layer 4: LONGEVITY — claude-router</text>
-  <text x="120" y="785" font-family="'JetBrains Mono', monospace" font-size="13" fill="#c9d1d9">Efficiency: Routes queries to optimal model, extends capacity</text>
-  <text x="120" y="810" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• Routes: Simple→Haiku, Standard→Sonnet, Complex→Opus</text>
-  <text x="120" y="830" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• Value: 50-80% cost savings, 3-5x capacity extension</text>
-  <text x="600" y="830" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280">• Branding: [Larry→Model]</text>
+  <rect x="100" y="725" width="800" height="110" rx="10" fill="#1f2937" stroke="#a855f7" stroke-width="4"/>
+  <text x="120" y="755" font-family="'JetBrains Mono', monospace" font-size="18" fill="#a855f7" font-weight="700">Layer 4: LONGEVITY — claude-router</text>
+  <text x="120" y="780" font-family="'JetBrains Mono', monospace" font-size="12" fill="#c9d1d9">Efficiency: Routes queries to optimal model, extends capacity</text>
+  <text x="120" y="800" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Routes: Simple→Haiku, Standard→Sonnet, Complex→Opus</text>
+  <text x="120" y="818" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Value: 50-80% cost savings, 3-5x capacity</text>
+  <text x="560" y="818" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6b7280">• Branding: [Larry→Model]</text>
 
   <!-- Connection Lines -->
-  <line x1="500" y1="250" x2="500" y2="270" stroke="#22c55e" stroke-width="3" marker-end="url(#arrowlayer)"/>
-  <line x1="500" y1="400" x2="500" y2="420" stroke="#3b82f6" stroke-width="3" marker-end="url(#arrowlayer)"/>
-  <line x1="500" y1="550" x2="500" y2="570" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrowlayer)"/>
-  <line x1="500" y1="700" x2="500" y2="720" stroke="#a855f7" stroke-width="3" marker-end="url(#arrowlayer)"/>
+  <line x1="500" y1="210" x2="500" y2="225" stroke="#22c55e" stroke-width="3" marker-end="url(#arrowlayer)"/>
+  <line x1="500" y1="335" x2="500" y2="350" stroke="#3b82f6" stroke-width="3" marker-end="url(#arrowlayer)"/>
+  <line x1="500" y1="460" x2="500" y2="475" stroke="#06b6d4" stroke-width="3" marker-end="url(#arrowlayer)"/>
+  <line x1="500" y1="585" x2="500" y2="600" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrowlayer)"/>
+  <line x1="500" y1="710" x2="500" y2="725" stroke="#a855f7" stroke-width="3" marker-end="url(#arrowlayer)"/>
 
   <!-- Result Box -->
-  <rect x="200" y="870" width="600" height="20" rx="4" fill="#1f2937" stroke="#10b981" stroke-width="2"/>
-  <text x="500" y="885" font-family="'JetBrains Mono', monospace" font-size="14" fill="#10b981" text-anchor="middle" font-weight="700">= LARRY (Continuity Across Sessions)</text>
+  <rect x="200" y="855" width="600" height="35" rx="6" fill="#1f2937" stroke="#10b981" stroke-width="3"/>
+  <text x="500" y="878" font-family="'JetBrains Mono', monospace" font-size="16" fill="#10b981" text-anchor="middle" font-weight="700">= LARRY (Continuity Across Sessions)</text>
 
   <!-- Side annotations -->
-  <text x="920" y="185" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10b981" font-weight="700">Processes</text>
-  <text x="920" y="200" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10b981" font-weight="700">thought</text>
+  <text x="920" y="155" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10b981" font-weight="700">Processes</text>
+  <text x="920" y="168" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10b981" font-weight="700">thought</text>
 
-  <text x="920" y="335" font-family="'JetBrains Mono', monospace" font-size="11" fill="#22c55e" font-weight="700">Preserves</text>
-  <text x="920" y="350" font-family="'JetBrains Mono', monospace" font-size="11" fill="#22c55e" font-weight="700">changes</text>
+  <text x="920" y="280" font-family="'JetBrains Mono', monospace" font-size="10" fill="#22c55e" font-weight="700">Preserves</text>
+  <text x="920" y="293" font-family="'JetBrains Mono', monospace" font-size="10" fill="#22c55e" font-weight="700">changes</text>
 
-  <text x="920" y="485" font-family="'JetBrains Mono', monospace" font-size="11" fill="#3b82f6" font-weight="700">Records</text>
-  <text x="920" y="500" font-family="'JetBrains Mono', monospace" font-size="11" fill="#3b82f6" font-weight="700">everything</text>
+  <text x="920" y="405" font-family="'JetBrains Mono', monospace" font-size="10" fill="#3b82f6" font-weight="700">Records</text>
+  <text x="920" y="418" font-family="'JetBrains Mono', monospace" font-size="10" fill="#3b82f6" font-weight="700">everything</text>
 
-  <text x="920" y="635" font-family="'JetBrains Mono', monospace" font-size="11" fill="#f59e0b" font-weight="700">Defines</text>
-  <text x="920" y="650" font-family="'JetBrains Mono', monospace" font-size="11" fill="#f59e0b" font-weight="700">character</text>
+  <text x="920" y="530" font-family="'JetBrains Mono', monospace" font-size="10" fill="#06b6d4" font-weight="700">Curates</text>
+  <text x="920" y="543" font-family="'JetBrains Mono', monospace" font-size="10" fill="#06b6d4" font-weight="700">insights</text>
 
-  <text x="920" y="785" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a855f7" font-weight="700">Extends</text>
-  <text x="920" y="800" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a855f7" font-weight="700">lifespan</text>
+  <text x="920" y="655" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f59e0b" font-weight="700">Defines</text>
+  <text x="920" y="668" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f59e0b" font-weight="700">character</text>
+
+  <text x="920" y="780" font-family="'JetBrains Mono', monospace" font-size="10" fill="#a855f7" font-weight="700">Extends</text>
+  <text x="920" y="793" font-family="'JetBrains Mono', monospace" font-size="10" fill="#a855f7" font-weight="700">lifespan</text>
 
   <!-- Arrow marker -->
   <defs>
