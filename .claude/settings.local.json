@@ -1,24 +1,10 @@
 {
   "hooks": {
     "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "./scripts/stage-conversations.sh"
-          }
-        ]
-      }
+      "./scripts/stage-conversations.sh"
     ],
     "PreCompact": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "./scripts/auto-checkpoint.sh"
-          }
-        ]
-      }
+      "./scripts/auto-checkpoint.sh"
     ]
   }
 }

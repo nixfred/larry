@@ -40,3 +40,6 @@ conversations/
 
 # Private files (not for public GitHub)
 CRYSTAL.md
+
+# Claude Code Forever - conversations tracked by default
+# Uncomment to exclude: conversations/claude-sessions/*.jsonl
