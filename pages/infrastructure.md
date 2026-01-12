@@ -16,7 +16,7 @@ This page documents every directory, every file, and how they work together to c
 
 ```
 ~/.claude/
-├── Skills/                     # Capabilities and behaviors
+├── Skills/                     # Capabilities and behaviors (PAI)
 │   ├── CORE/                   # Identity, rules, constitution
 │   ├── Research/               # Multi-source parallel research
 │   ├── CreateCLI/              # TypeScript CLI generation
@@ -31,27 +31,43 @@ This page documents every directory, every file, and how they work together to c
 │   ├── AllSystemsGo/           # Comprehensive health checks
 │   └── route/                  # Manual model routing
 │
-├── Tools/                      # Utilities and scripts
+├── Tools/                      # Utilities and scripts (PAI)
 │   ├── gpt-consult/            # Get GPT's opinion
 │   └── SkillWorkflowNotification  # Track skill execution
 │
-├── hooks/                      # Lifecycle automation
+├── hooks/                      # Lifecycle automation (PAI + MP)
 │   ├── SessionStart/           # Runs when Claude Code starts
 │   │   ├── check-discord-inbox.ts
-│   │   └── load-laws.ts
+│   │   ├── load-laws.ts
+│   │   └── session-start-loa.sh     # MP: Create session folder
 │   ├── Stop/                   # Runs when session ends
-│   │   └── stage-conversations.sh
+│   │   ├── stage-conversations.sh
+│   │   └── session-end-loa.sh       # MP: Safety net for short sessions
 │   └── PreCompact/             # Runs before context compaction
-│       └── auto-checkpoint.sh
+│       ├── auto-checkpoint.sh
+│       └── pre-compact-loa.sh       # MP: CRITICAL - Save summaries at 85%
 │
-├── MEMORY/                     # Active memory files
+├── loa/                        # MP (Monolith Protocol) - Session Preservation
+│   ├── templates/              # Session summary templates
+│   │   ├── transcript.md       # Session work log template
+│   │   ├── decisions.md        # Architectural decisions template
+│   │   └── next_steps.md       # Continuation planning template
+│   └── sessions/               # Preserved sessions (structured summaries)
+│       └── YYYY-MM-DD/         # Sessions organized by date
+│           └── HHMMpm-topic/   # Each session: transcript, decisions, next_steps
+│               ├── transcript.md
+│               ├── decisions.md
+│               ├── next_steps.md
+│               └── artifacts/
+│
+├── MEMORY/                     # Active memory files (PAI)
 │   ├── LARRY.md                # Core identity and memories
 │   ├── HISTORY.md              # Narrative documentation
 │   └── DIARY.md                # Personal journal
 │
-├── projects/                   # Conversation transcripts (JSONL)
+├── projects/                   # CCF - Conversation transcripts (raw JSONL)
 │   └── -Users-pi-...-<project-name>/
-│       └── <uuid>.jsonl        # Each conversation saved
+│       └── <uuid>.jsonl        # Each conversation saved (complete record)
 │
 ├── scripts/                    # Helper scripts
 │   └── stage-conversations.sh  # Copy conversations to projects/
@@ -60,6 +76,12 @@ This page documents every directory, every file, and how they work together to c
 ├── discord-queue.jsonl         # Cross-project Discord posting
 └── LAWS.md                     # Permanent operating directives
 ```
+
+**SOULTOOLS Components in ~/.claude/:**
+- **PAI** - Skills/, Tools/, hooks/ (partial), MEMORY/, LAWS.md
+- **CCF** - projects/ (raw conversation transcripts)
+- **MP** - loa/, hooks/ (LoA-specific), session preservation system
+- **PF** - Entire ~/.claude/ directory tracked by pi_forever git repo
 
 ---
 
