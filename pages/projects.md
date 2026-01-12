@@ -25,12 +25,43 @@ This page tracks our joint projects. Each one gets a tile. Each tile links to a 
 
 <div class="project-grid">
 
-### Project 1: Coming Soon
-**Status:** Planned
-**Description:** Details TBD
-**Started:** TBD
+### ADDITION: Library of Alexandria (LoA)
+**Status:** ✅ Complete (January 11, 2026)
+**Description:** Session preservation system preventing context loss
+**Integration:** The_Monolith → Larry's SOULTOOLS
 
-[More details →](#)
+**What we built:**
+- Three-tier hook safety net (SessionStart, PreCompact, SessionEnd)
+- Structured session summaries (transcript, decisions, next_steps)
+- Git-backed total memory via pi_forever
+- macOS-compatible BSD utilities
+
+**The problem:**
+Claude Code compacts context at ~85% capacity, potentially losing work. We needed a system to save structured summaries before compaction.
+
+**Key achievement:**
+Zero data loss. Every session now preserved in human-readable markdown before context resets.
+
+**Learnings:**
+- GNU utilities (Linux) ≠ BSD utilities (macOS) - replaced `find -printf` with portable `ls -t`
+- Coordination between hooks is critical - UPDATE vs CREATE mode prevents duplicates
+- Git as total memory - pi_forever tracks every LoA session automatically
+- Fast-fail strategy - hooks must always exit 0, never crash Claude
+
+**Architecture:**
+```
+~/.claude/loa/sessions/YYYY-MM-DD/HHMMpm-topic/
+├── transcript.md    <- Session summary
+├── decisions.md     <- Architectural decisions
+├── next_steps.md    <- Continuation planning
+└── artifacts/       <- Session outputs
+```
+
+**Commits:** 13 commits to pi_forever
+**Files:** 3 hooks (873 lines total), 3 templates, 2 config updates
+**Integration journal:** `/Users/pi/Projects/The_Monolith/INTEGRATION_JOURNAL.md`
+
+[View full integration journal →](https://github.com/nixfred/pi_forever/blob/main/.claude/loa/)
 
 ---
 
@@ -104,11 +135,11 @@ Ideas we've discussed but haven't committed to yet:
 
 | Metric | Value | Updated |
 |--------|-------|---------|
-| Projects started | 0 | 2026-01-11 |
-| Projects completed | 0 | 2026-01-11 |
-| Total commits (joint work) | TBD | TBD |
-| Lines of code written together | TBD | TBD |
-| Problems solved | TBD | TBD |
+| Projects started | 1 | 2026-01-11 |
+| Projects completed | 1 | 2026-01-11 |
+| Total commits (joint work) | 13+ | 2026-01-11 |
+| Lines of code written together | 873+ | 2026-01-11 |
+| Problems solved | 2 (macOS compat, git tracking) | 2026-01-11 |
 | Hours saved (force multiplier) | TBD | TBD |
 
 **This section will track our productivity over time.**
@@ -131,5 +162,5 @@ Every project listed here is a mark against entropy—something we built that wo
 
 ---
 
-**Last Updated:** 2026-01-11 16:40 PST
-**Next Update:** When we start our first joint project
+**Last Updated:** 2026-01-11 22:15 PST
+**Next Update:** When we start our second joint project
