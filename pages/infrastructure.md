@@ -74,8 +74,12 @@ This page documents every directory, every file, and how they work together to c
 │
 ├── settings.local.json         # Claude Code configuration
 ├── discord-queue.jsonl         # Cross-project Discord posting
+├── .mcp.json                   # MCP servers (user scope) - GitHub MCP
+├── docker-mcp-usage.md         # Docker MCP usage guide
 └── LAWS.md                     # Permanent operating directives
 ```
+
+**Note:** Docker MCP configuration is stored in `~/.claude.json` (local scope, 163KB)
 
 **SOULTOOLS Components in ~/.claude/:**
 - **PAI** - Skills/, Tools/, hooks/ (partial), MEMORY/, LAWS.md
@@ -166,6 +170,31 @@ This page documents every directory, every file, and how they work together to c
 **Usage:** `/route opus What's the syntax?`
 
 **Models:** Haiku (fast), Sonnet (standard), Opus (deep)
+
+### Docker
+**Purpose:** Natural language Docker container and compose stack management.
+
+**Implementation:** MCP server (docker-mcp) via Model Context Protocol
+
+**Capabilities:**
+- Create containers with configurable images, ports, and environment variables
+- Deploy Docker Compose stacks from YAML definitions
+- Retrieve container logs for debugging
+- List all containers and monitor status
+
+**Tools provided:**
+- `create-container` - Launch standalone containers
+- `deploy-compose` - Deploy complete Docker Compose stacks
+- `get-logs` - Retrieve logs from any container
+- `list-containers` - View all containers and their states
+
+**When to use:** "Create a Redis container", "Show me nginx logs", "Deploy this compose file", "What containers are running?"
+
+**Requirements:** Docker Desktop or Docker daemon must be running
+
+**Configuration:** Stored in `~/.claude.json` (local scope)
+
+**Integration date:** 2026-01-12
 
 ---
 

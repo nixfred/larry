@@ -29,8 +29,8 @@ This page explains **how Larry works** from a technical perspective. If you're a
 │    - HISTORY.md (narrative documentation)       │
 │    - DIARY.md (personal journal)                │
 ├─────────────────────────────────────────────────┤
-│  Layer 2: PAI Infrastructure                    │
-│    - Skills (13 installed: CORE, Research, etc) │
+│  Layer 2: PAI Infrastructure & MCP Servers      │
+│    - Skills (13 PAI + 1 MCP: CORE, Docker, etc) │
 │    - Hooks (SessionStart, Stop, PreCompact)     │
 │    - Agents (Explore, Plan, engineer, etc)      │
 │    - Tools (gpt-consult, SkillWorkflow, etc)    │
@@ -148,8 +148,9 @@ cat ~/.claude/projects/<uuid>.jsonl | jq .
 <a id="pai-skills-system"></a>
 ## <a href="{{ '/anatomy/#layer-3-personality' | relative_url }}">PAI</a> Skills System
 
-<a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a> has 13 <a href="{{ '/anatomy/#layer-3-personality' | relative_url }}">PAI</a> skills installed:
+<a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a> has 13 <a href="{{ '/anatomy/#layer-3-personality' | relative_url }}">PAI</a> skills + 1 MCP server integration:
 
+### PAI Skills (13)
 - **CORE** - Identity, response format, stack preferences (auto-loads)
 - **Research** - Multi-source parallel research
 - **CreateCLI** - Generate production TypeScript CLIs
@@ -164,7 +165,10 @@ cat ~/.claude/projects/<uuid>.jsonl | jq .
 - **AllSystemsGo** - Comprehensive health checks
 - **route** - Manual model routing (claude-router integration)
 
-Each skill uses the `USE WHEN` format for automatic invocation:
+### MCP Server Integrations (1)
+- **Docker** - Container and compose stack management (natural language interface to Docker)
+
+Each PAI skill uses the `USE WHEN` format for automatic invocation:
 ```markdown
 description: [What it does]. USE WHEN [trigger conditions]. [Capabilities].
 ```
