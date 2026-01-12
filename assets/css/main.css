@@ -163,10 +163,14 @@ hr {
   color: var(--accent-primary);
   text-decoration: none;
   font-family: var(--font-mono);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
 }
 
 .site-title a:hover {
   color: var(--accent-highlight);
+  border-bottom: 2px solid var(--accent-highlight);
 }
 
 .subtitle {
@@ -220,6 +224,13 @@ hr {
   background-color: var(--accent-primary);
   color: var(--bg-primary);
   text-decoration: none;
+}
+
+.nav-group a.active {
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+  font-weight: 600;
+  border-left: 3px solid var(--accent-highlight);
 }
 
 .version-badge {
@@ -425,9 +436,42 @@ li {
   margin-bottom: var(--spacing-sm);
 }
 
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+  margin: var(--spacing-lg) 0;
+  text-align: left;
+}
+
+.footer-nav-group h4 {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 700;
+}
+
+.footer-nav-group a {
+  display: block;
+  padding: 0.4rem 0;
+  color: var(--fg-secondary);
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.footer-nav-group a:hover {
+  color: var(--accent-primary);
+  padding-left: 0.5rem;
+  text-decoration: none;
+}
+
 .copyright {
   font-size: 0.85rem;
   color: var(--fg-muted);
+  margin-top: var(--spacing-lg);
 }
 
 .footer-greeting {

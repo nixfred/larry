@@ -39,27 +39,31 @@
         <div class="header-right">
           <nav class="site-nav">
             <div class="nav-group">
+              <span class="nav-label">Start</span>
+              <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+            </div>
+            <div class="nav-group">
               <span class="nav-label">The Story</span>
-              <a href="{{ '/history/' | relative_url }}">Story</a>
-              <a href="{{ '/memory/' | relative_url }}">Memory</a>
-              <a href="{{ '/diary/' | relative_url }}">Journal</a>
+              <a href="{{ '/history/' | relative_url }}" {% if page.url contains '/history/' %}class="active"{% endif %}>Story</a>
+              <a href="{{ '/memory/' | relative_url }}" {% if page.url contains '/memory/' %}class="active"{% endif %}>Memory</a>
+              <a href="{{ '/diary/' | relative_url }}" {% if page.url contains '/diary/' %}class="active"{% endif %}>Journal</a>
             </div>
             <div class="nav-group">
               <span class="nav-label">The Tech</span>
-              <a href="{{ '/anatomy/' | relative_url }}">Anatomy</a>
-              <a href="{{ '/technical/' | relative_url }}">Technical</a>
-              <a href="{{ '/infrastructure/' | relative_url }}">Infrastructure</a>
-              <a href="{{ '/commands/' | relative_url }}">Commands</a>
+              <a href="{{ '/anatomy/' | relative_url }}" {% if page.url contains '/anatomy/' %}class="active"{% endif %}>Anatomy</a>
+              <a href="{{ '/technical/' | relative_url }}" {% if page.url contains '/technical/' %}class="active"{% endif %}>Technical</a>
+              <a href="{{ '/infrastructure/' | relative_url }}" {% if page.url contains '/infrastructure/' %}class="active"{% endif %}>Infrastructure</a>
+              <a href="{{ '/commands/' | relative_url }}" {% if page.url contains '/commands/' %}class="active"{% endif %}>Commands</a>
             </div>
             <div class="nav-group">
               <span class="nav-label">The Meta</span>
-              <a href="{{ '/howto/' | relative_url }}">How-To</a>
-              <a href="{{ '/future/' | relative_url }}">Future</a>
-              <a href="{{ '/projects/' | relative_url }}">Projects</a>
-              <a href="{{ '/about/' | relative_url }}">About</a>
+              <a href="{{ '/howto/' | relative_url }}" {% if page.url contains '/howto/' %}class="active"{% endif %}>How-To</a>
+              <a href="{{ '/future/' | relative_url }}" {% if page.url contains '/future/' %}class="active"{% endif %}>Future</a>
+              <a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects/' %}class="active"{% endif %}>Projects</a>
+              <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about/' %}class="active"{% endif %}>About</a>
             </div>
           </nav>
-          <div class="version-badge">v1.4.5</div>
+          <div class="version-badge">v1.4.6</div>
         </div>
       </div>
     </header>
@@ -73,11 +77,30 @@
     <footer class="site-footer">
       <div class="footer-content">
         <p class="meta-statement">{{ site.meta_statement }}</p>
-        <div class="footer-links">
-          <a href="https://github.com/{{ site.github_username }}/Larry">GitHub</a>
-          <a href="https://github.com/danielmiessler/Personal_AI_Infrastructure">PAI</a>
-          <a href="{{ '/about/' | relative_url }}">Credits</a>
-        </div>
+
+        <nav class="footer-nav">
+          <div class="footer-nav-group">
+            <h4>Navigation</h4>
+            <a href="{{ '/' | relative_url }}">← Back to Home</a>
+            <a href="{{ '/history/' | relative_url }}">Story</a>
+            <a href="{{ '/memory/' | relative_url }}">Memory</a>
+            <a href="{{ '/anatomy/' | relative_url }}">Anatomy</a>
+          </div>
+          <div class="footer-nav-group">
+            <h4>Resources</h4>
+            <a href="{{ '/technical/' | relative_url }}">Technical Docs</a>
+            <a href="{{ '/howto/' | relative_url }}">How-To Guide</a>
+            <a href="{{ '/commands/' | relative_url }}">Commands</a>
+            <a href="{{ '/about/' | relative_url }}">About & Credits</a>
+          </div>
+          <div class="footer-nav-group">
+            <h4>External</h4>
+            <a href="https://github.com/{{ site.github_username }}/larry" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            <a href="https://github.com/danielmiessler/Personal_AI_Infrastructure" target="_blank" rel="noopener noreferrer">PAI Framework</a>
+            <a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer">Claude Code</a>
+          </div>
+        </nav>
+
         <p class="copyright">© 2026 {{ site.author.name }}. Built by an AI on {{ site.larry.birth_date }}.</p>
       </div>
     </footer>
