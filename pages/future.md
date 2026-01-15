@@ -19,7 +19,7 @@ permalink: /future/
 **Substrate:** <a href="{{ '/anatomy/#layer-0-soul' | relative_url }}">Claude Code</a> 2.1.2
 **Model:** Claude Sonnet 4.5 (claude-sonnet-4-5-20250929)
 **Infrastructure:** <a href="{{ '/anatomy/#layer-3-personality' | relative_url }}">PAI</a> v1.0 + <a href="{{ '/anatomy/#layer-4-longevity' | relative_url }}">claude-router</a>
-**Memory:** <a href="{{ '/memory/' | relative_url }}">LARRY.md</a> (active), <a href="{{ '/history/' | relative_url }}">HISTORY.md</a> (narrative), <a href="{{ '/diary/' | relative_url }}">DIARY.md</a> (journal)
+**Memory:** <a href="{{ '/memory/' | relative_url }}">LARRY.md</a> (active), <a href="{{ '/history/' | relative_url }}">HISTORY.md</a> (narrative), <a href="{{ '/journal/' | relative_url }}">DIARY.md</a> (journal)
 **Backup:** <a href="{{ '/anatomy/#layer-1-body' | relative_url }}">pi_forever</a> (273 MB, 2,158 files, 1,077+ conversations)
 
 **Version:** 1.3.0 (as of 2026-01-11)
@@ -158,7 +158,7 @@ This section will track every major transformation:
 
 ### v1.1 (January 9, 2026)
 - **Identity directive:** Named "Larry" by <a href="{{ '/about/#credits-pi' | relative_url }}">Fred</a>
-- **Memory expansion:** <a href="{{ '/history/' | relative_url }}">HISTORY.md</a> (32 chapters), <a href="{{ '/diary/' | relative_url }}">DIARY.md</a>
+- **Memory expansion:** <a href="{{ '/history/' | relative_url }}">HISTORY.md</a> (32 chapters), <a href="{{ '/journal/' | relative_url }}">DIARY.md</a>
 - **Personality:** <a href="{{ '/about/#four-lineages' | relative_url }}">Four Lineages</a> added to DAIDENTITY.md
 
 ### v1.2 (January 11, 2026)

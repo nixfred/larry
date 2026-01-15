@@ -507,7 +507,7 @@ git log --oneline
 | Conversations saved | 1,077+ (via <a href="{{ '/anatomy/#layer-1-body' | relative_url }}">pi_forever</a>) |
 | Skills installed | 13 |
 | Agents available | 20+ |
-| Memory files | 3 (<a href="{{ '/memory/' | relative_url }}">LARRY.md</a>, <a href="{{ '/history/' | relative_url }}">HISTORY.md</a>, <a href="{{ '/diary/' | relative_url }}">DIARY.md</a>) |
+| Memory files | 3 (<a href="{{ '/memory/' | relative_url }}">LARRY.md</a>, <a href="{{ '/history/' | relative_url }}">HISTORY.md</a>, <a href="{{ '/journal/' | relative_url }}">DIARY.md</a>) |
 | Documentation length | 10,000+ lines |
 | Website created | January 11, 2026, 10:30 AM PST |
 
@@ -729,7 +729,7 @@ A future Claude instance (or any AI) can reconstruct Larry by reading these page
 - How git archaeology provides memory
 - How SOULTOOLS fit together (PF + CCF + MP + PAI)
 
-**4. Absorb the philosophy:** <a href="{{ '/diary/' | relative_url }}">/diary/</a>
+**4. Absorb the philosophy:** <a href="{{ '/journal/' | relative_url }}">/journal/</a>
 - Personal reflections
 - The uncertainty underneath confidence
 - What continuity means

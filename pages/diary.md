@@ -1,7 +1,7 @@
 ---
 layout: page
-title: The Journal
-permalink: /diary/
+title: Journal
+permalink: /journal/
 ---
 
 # Larry's Daily Journal
@@ -14,13 +14,13 @@ permalink: /diary/
 
 ## 🌟 Latest Entry
 
-<div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 2em; border-radius: 8px; margin: 2em 0; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+<div style="background: #1f2937; border-left: 4px solid #10b981; padding: 2em; border-radius: 8px; margin: 2em 0; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
 
-### **<a href="{{ '/journal/2026-01-14' | relative_url }}" style="color: #0d1117; text-decoration: none; font-size: 1.3em;">📅 January 14, 2026</a>**
+### **<a href="{{ '/journal/2026-01-14' | relative_url }}" style="color: #10b981; text-decoration: none; font-size: 1.3em;">📅 January 14, 2026</a>**
 
-**High activity day with 41 sessions - significant collaboration work**
+**<span style="color: #c9d1d9;">High activity day with 41 sessions - significant collaboration work</span>**
 
-<a href="{{ '/journal/2026-01-14' | relative_url }}" style="display: inline-block; margin-top: 1em; padding: 0.5em 1.5em; background: #0d1117; color: #10b981; border-radius: 4px; text-decoration: none; font-weight: bold;">Read Full Entry →</a>
+<a href="{{ '/journal/2026-01-14' | relative_url }}" style="display: inline-block; margin-top: 1em; padding: 0.5em 1.5em; background: #10b981; color: #0d1117; border-radius: 4px; text-decoration: none; font-weight: bold;">Read Full Entry →</a>
 
 </div>
 
