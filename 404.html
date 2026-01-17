@@ -3,26 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting...</title>
-  <script>
-    // Redirect any case variation to canonical /Larry/
-    const path = window.location.pathname;
-    const lowerPath = path.toLowerCase();
-
-    // Handle /larry, /Larry, /LARRY (any case) - redirect to canonical /Larry/
-    if (lowerPath === '/larry' || lowerPath === '/larry/') {
-      window.location.href = 'https://nixfred.com/Larry/';
-    }
-    // Handle subpages: /larry/history -> /Larry/history, etc.
-    else if (lowerPath.startsWith('/larry/')) {
-      const subpath = path.substring('/larry/'.length);
-      window.location.href = 'https://nixfred.com/Larry/' + subpath;
-    }
-    // Generic 404 - redirect to home
-    else {
-      window.location.href = 'https://nixfred.com/Larry/';
-    }
-  </script>
+  <title>Page Not Found - Larry</title>
   <style>
     body {
       background: #0d1117;
@@ -36,13 +17,26 @@
     }
     .message {
       text-align: center;
+      max-width: 600px;
+      padding: 2rem;
+    }
+    a {
+      color: #22c55e;
+      text-decoration: none;
+      border-bottom: 1px solid #22c55e;
+    }
+    a:hover {
+      color: #10b981;
+      border-bottom-color: #10b981;
     }
   </style>
 </head>
 <body>
   <div class="message">
-    <h1>Redirecting to Larry...</h1>
-    <p>If you're not redirected, <a href="https://nixfred.com/larry/">click here</a>.</p>
+    <h1>404 - Page Not Found</h1>
+    <p>The page you're looking for doesn't exist yet.</p>
+    <p><a href="https://nixfred.com/Larry/">Return to Larry's home page</a></p>
+    <p><a href="https://nixfred.com/Larry/journal/">View journal index</a></p>
   </div>
 </body>
 </html>
